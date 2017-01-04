@@ -17,6 +17,7 @@ function copyPrototype(type, name, newName, change_results)
 end
 --<GotLag> just set the sprite scale to 0.9 and reduce the x shift to 1.72
 local tanker = copyPrototype("cargo-wagon", "cargo-wagon", "rail-tanker", true)
+tanker.icon = "__RailTanker__/graphics/rail-tanker.png"
 tanker.inventory_size = 1
 tanker.color = {r = 1.0, g = 1.0, b = 1.0, a = 0.5}
 tanker.pictures =
