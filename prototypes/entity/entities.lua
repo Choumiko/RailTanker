@@ -42,8 +42,8 @@ tanker.pictures =
     line_length = 4,
     lines_per_file = 8,
     shift={1.93, -0.38}
-    --shift={1.72, -0.38},
-    --scale = 0.9
+  --shift={1.72, -0.38},
+  --scale = 0.9
 
   }
 
@@ -59,6 +59,8 @@ data:extend(
       icon = "__RailTanker__/graphics/trans-icon.png",
       flags = {"placeable-player", "player-creation", "placeable-off-grid"},
       max_health = 1,
+      destructible = nil,
+      minable = nil,
       --corpse = "medium-remnants",
       collision_box = {{-1.0, -1.0}, {1.0, 1.0}},
       collision_mask = {"ghost-layer"},
@@ -133,6 +135,14 @@ data:extend(
           priority = "extra-high",
           width = 1,
           height = 1,
+        },
+        gas_flow =
+        {
+          filename = "__RailTanker__/graphics/trans.png",
+          priority = "extra-high",
+          width = 1,
+          height = 1,
+          frame_count = 1,
         }
       },
       flow_length_in_ticks = 360,
@@ -263,10 +273,18 @@ data:extend(
           priority = "extra-high",
           width = 1,
           height = 1,
+        },
+        gas_flow =
+        {
+          filename = "__RailTanker__/graphics/trans.png",
+          priority = "extra-high",
+          width = 1,
+          height = 1,
+          frame_count = 1,
         }
       },
       flow_length_in_ticks = 360,
-      circuit_wire_connection_points = 
+      circuit_wire_connection_points =
       {
         {
           shadow =

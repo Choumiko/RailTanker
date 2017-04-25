@@ -289,6 +289,7 @@ local update_from_version = {
   ["1.3.31"] = function() return "1.3.32" end,
   ["1.3.32"] = function() return "1.3.33" end,
   ["1.3.33"] = function() return "1.4.0" end, 
+  ["1.4.0"] = function() return "1.4.1" end,
 
 }
 
