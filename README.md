@@ -4,6 +4,10 @@ Note: Inserters can remove the used fake items from the railtanker, so be sure t
 [Tank Wagon](https://mods.factorio.com/mods/GotLag/Tank%20Wagon) doesn't have this limitation, but needs additional work to work with conditions.
 
 ### Changelog:
+1.4.1:
+
+- version for Factorio 0.15.x
+
 1.4.0:
 
 - version for Factorio 0.14.x
